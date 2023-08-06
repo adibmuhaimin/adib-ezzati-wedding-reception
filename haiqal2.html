@@ -45,6 +45,8 @@
 
         <!-- AOS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
 
     <body class="container-fluid" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
@@ -82,42 +84,42 @@
                             </section>
                         </main>
                     </div>
+                    <nav class="d-flex navbar navbar-dark bg-dark navbar-nav w-100 bottom-fixed nav__menu_card animated fadeInUp navbar-card d-none"  style="width:inherit !important">
+                        <ul class="row m-auto p-0 w-100 text-center list-unstyled">
+                            <li class="col">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#giftModal">
+                                    <i class="bx bx-gift nav__icon bx-md"></i>
+                                    <br />
+                                    <small class="poppin-font">Hadiah</small>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    <i class="bx bx-phone nav__icon bx-md"></i>
+                                    <br />
+                                    <small class="poppin-font">Hubungi</small>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#locationModal">
+                                    <i class="bx bx-map-pin nav__icon bx-md"></i>
+                                    <br />
+                                    <small class="poppin-font">Lokasi</small>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#calendarModal">
+                                    <i class="bx bx-calendar nav__icon bx-md"></i>
+                                    <br />
+                                    <small class="poppin-font">Kalendar</small>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <ul class="w-100 m-0 text-center list-unstyled poppin-font" style="color: white;">
+                            <li>Direka bentuk oleh Haiqal Halim</li>
+                        </ul> -->
+                    </nav>
                     <div class="main-div d-none">
-                        <nav class="d-flex navbar navbar-dark bg-dark navbar-nav w-100 bottom-fixed right-0 left-0 nav__menu_card animated fadeInUp">
-                            <ul class="row m-auto p-0 w-100 text-center list-unstyled">
-                                <li class="col">
-                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#giftModal">
-                                        <i class="bx bx-gift nav__icon bx-md"></i>
-                                        <br />
-                                        <small class="poppin-font">Hadiah</small>
-                                    </a>
-                                </li>
-                                <li class="col">
-                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">
-                                        <i class="bx bx-phone nav__icon bx-md"></i>
-                                        <br />
-                                        <small class="poppin-font">Hubungi</small>
-                                    </a>
-                                </li>
-                                <li class="col">
-                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#locationModal">
-                                        <i class="bx bx-map-pin nav__icon bx-md"></i>
-                                        <br />
-                                        <small class="poppin-font">Lokasi</small>
-                                    </a>
-                                </li>
-                                <li class="col">
-                                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#calendarModal">
-                                        <i class="bx bx-calendar nav__icon bx-md"></i>
-                                        <br />
-                                        <small class="poppin-font">Kalendar</small>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="w-100 m-0 text-center list-unstyled poppin-font" style="color: white;">
-                                <li>Direka bentuk oleh Haiqal Halim</li>
-                            </ul>
-                        </nav>
                         <section class="container-fluid  section__height main-card" style="background-image: url('img/marriednow-project/background-card.jpg')">
                             <div class="wrapper pb-16" style="transform: translate(20px, 0px);">
                                 <div class="row"> 
@@ -143,14 +145,83 @@
                                 </div> 
                             </div> 
                         </section>
+                        <section class="container section wedding-info aos-init aos-animate poppin-font py-4" id="info" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="d-flex justify-content-center align-items-center"> 
+                                <div class="wrapper">
+                                    <p class="info-greeting aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                                        ASSALAMUALAIKUM WBT &amp; SALAM SEJAHTERA
+                                    </p>
+                                    <div class="info-invitor aos-init aos-animate mt-3" data-aos="fade-up" data-aos-duration="1000">
+                                        <p style="font-size: 16px">
+                                            <b>KELUARGA PENGANTIN LELAKI</b>
+                                        </p>
+                                        <p class="mb-1" style="font-size:20px;">Halim Bin Haron</p>
+                                        <hr class="my-1">  
+                                        <p style="font-size:20px;">Ramlah Binti Mohammed</p>             
+                                        <p class="pt-3 pb-3">&amp;</p>                    
+                                        <p style="font-size: 16px">
+                                            <b>KELUARGA PENGANTIN PEREMPUAN</b>
+                                        </p>
+                                        <p class="mb-1" style="font-size:20px;">Mohmad Bin Hussin</p>
+                                        <hr class="my-1">
+                                        <p style="font-size:20px;">Norizan Binti Senin</p>
+                                    </div>
+                                    <p class="info-greeting aos-init aos-animate my-3" data-aos="fade-up" data-aos-duration="1000">
+                                        Menjemput Dato'/Datin, Tuan/Puan, Encik/Cik ke walimatulurus
+                                    </p>   
+                                    <div class="info-invitor aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                                        <p style="font-size:20px;">Mohamad Haiqal bin Halim</p>
+                                        <p>&amp;</p>
+                                            <p style="font-size:20px;">Mas Linda binti Mohmad</p>
+                                    </div>
+                                    <div class="info-details aos-init aos-animate mt-3" data-aos="fade-up" data-aos-duration="1000">
+                                        <p><b style="color: #be822b">Tarikh</b></p>
+                                        <p>Ahad,
+                                            10
+                                            September
+                                            2023</p>
+                                        <br>
+                                        <p><b style="color: #be822b">Masa</b></p>
+                                        <p>11:00 Pagi -
+                                            4:00 Petang</p>
+                                        <br>
+                                        <p><b style="color: #be822b">Tempat</b></p>
+                                        <p>
+                                            MZ Fountain Hall, Kampung Sg Ramal Luar, Kajang
+                                        </p>
+                                    </div>
+                                    <div class="info-schedule aos-init aos-animate py-2" data-aos="fade-up" data-aos-duration="1000">
+                                        <p><b style="color: #be822b">Aturcara Majlis</b></p>
+                                        <table class="table table-borderles">
+                                            <tbody class="tbody-atucara-majlis">
+                                              <tr>
+                                                <td class="text-end">Majlis Bermula</td>
+                                                <td class="text-start">11:00 Pagi</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="text-end">Ketibaan Pengantin</td>
+                                                <td class="text-start">12:30 Tengah hari</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="text-end">Majlis Berakhir</td>
+                                                <td class="text-start">4:00 Petang</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <!--=============== COUNTDOWN ===============-->
-                        <section data-aos="fade-up" data-aos-duration="1000" class="aos-init aos-animate">
-                            <div class="d-flex justify-content-center align-items-center pt-5 mb-5" style="padding-bottom:25%;">
+                        <section class="aos-init aos-animate my-3" data-aos="fade-up" data-aos-duration="1000" >
+                            <img src="img/marriednow-project/divider.png" alt="" class="pl-5 pr-5 pt-5">
+                            <div class="d-flex justify-content-center align-items-center">
                                 <div class="wrapper w-full text-center">
-                                    <h3 class="section-title">Menanti Hari</h3>
+                                    <h3 class="poppin-font section-title">Menanti Hari</h3>
                                     <div id="flipdown" class="flipdown flex justify-center m-auto"></div>
                                 </div>
                             </div>
+                            <img src="img/marriednow-project/divider.png" alt="" class="pl-5 pr-5 pt-5">
                         </section>
                         <script>
                             document.addEventListener('DOMContentLoaded', () => {
@@ -159,11 +230,32 @@
 
                                 // Set up FlipDown
                                 var flipdown = new FlipDown(parseInt(eventDate))
-
                                     // Start the countdown
                                     .start()
                             });
                         </script>
+                        <!--=============== PRAYER ===============-->
+                        <section class="container section prayer aos-init aos-animate mb-4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="wrapper absolute mt-3" style="width: 85%">
+                                <p class="prayer-text" style="font-style:italic;">
+                                    Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.
+                                </p>
+                            </div>
+                            <img class="img-custom" src="img/marriednow-project/bg-prayer.png" alt="">
+                        </section>
+                        <footer class="poppin-font" style="margin-bottom:10%;">
+                            <ul class="pb-20">
+                                <li class="pb-10">
+                                    <p class="hashtag text-center" style="font-size: 20px">#HaiqalfalLinlove</p>
+                                </li>
+                                <li class="flex justify-center text-center">
+                                    <p>
+                                        <span class="text-red-500"><i class="fa-brands fa-connectdevelop"></i></span> Created  by<br>
+                                        Haiqal Halim
+                                    </p>
+                                </li>
+                            </ul>    
+                        </footer>       
                     </div>
                 </div>
             <div class="col-lg "></div>
@@ -434,13 +526,12 @@
                 <!-- End Contact Modal -->
             </div>
         </div>
+
+        <script>
+            AOS.init();
+          </script>
         <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
         <script src="js/calendar.js"></script>
         <script src="js/card-main.js"></script>
-
-        <script type="text/javascript">
-            AOS.init();
-
-        </script>
     </body>
 </html>

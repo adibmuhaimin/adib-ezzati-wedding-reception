@@ -27,19 +27,18 @@ body {
 
 #template {
     box-shadow: inherit;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 .nav__menu_card {
     background-color: var(--container-color);
     box-shadow: 0 3px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     padding: 0 1rem;
     display: grid;
     border-radius: 1.25rem 1.25rem 0 0;
     transition: .4s;
-    max-width: 600px;
     font-size: 13px !important;
 }
 
@@ -75,7 +74,6 @@ body {
     line-height: 1em;
 }
 
-
 .pb-16 {
     padding-bottom: 4rem;
 }
@@ -84,11 +82,39 @@ body {
     width: 75%;
 }
 
+.info-greeting, .info-details {
+    font-size: 16px;
+}
 
+.tbody-atucara-majlis td {
+    border:0px;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+.prayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prayer-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+  }
+
+.section-title, .feature-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+  
 /*=============== LOCATION ===============*/
 .location-icon > a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 } 
   
 .location-icon > a > i, .location-icon > a > span {
@@ -133,81 +159,6 @@ body {
     backdrop-filter: blur(3px);
 }
 
-/*  //////////
-    PAGE 1 
-    //////////
-*/ 
-#pg1 {
-    text-align: center;
-    min-height: 90vh;
-    justify-content: center;
-    align-items: center;
-}
-#pg1-bg {
-    width: 100%;
-    height: 100%;
-    background-image: url("img/bg-flower.png");
-    background-size: inherit;
-    background-position: top;
-    position: absolute;
-    top: 0;
-    opacity: 0.6;
-    z-index: 1;
-}
-.pg1-title2-group {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: aussie-ocean;
-    font-size: 110px;
-    line-height: 0.75em;
-}
-/*  //////////
-    PAGE 2
-    //////////
-*/
-#pg2 {
-    /* codehere */
-}
-#pg2-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url("img/bg1.jpg");
-    background-size: inherit;
-    background-position: top;
-}
-#pg2 {
-    background-color: #fcf2f6;
-    background-color: #fcf2f6;
-}
-.pg2-line {
-    background-image: linear-gradient(#000, #000);
-    background-size: 1px 90%;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-/*  //////////
-    PAGE 2
-    //////////
-*/
-#pg-detail {
-    /* background-color: #fcf2f6; */
-}
-#pg-detail-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url("img/flower-gold.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
 .details {
     text-align: center;
     justify-content: center;
@@ -215,46 +166,13 @@ body {
     /* min-height: 100vh; */
     /* padding-bottom: 150px !important; */
 }
-#pg-end {
-    /* BACKGROUND */
-    /* background-image: url("img/bg-demo.jpg");
-    background-repeat: round;
-    background-size: cover; */
 
-    text-align: center;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 150px !important;
-}
-#pg-end {
-    line-height: 2;
-}
-#pg-end-bg {
-    width: 100%;
-    height: 100%;
-    background-image: url("img/tunang.jpg") ;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    opacity: 0.6;
-    z-index: 1;
-}
 .bottom-fixed {
     position: fixed !important;
     bottom: 0;
     z-index: 1030;
 }
-#pg-call{
-    background-color: #fcf2f6;
-}
-#pg-call dl dt {
-    text-align: right
-}
-#pg-call dl dd {
-    text-align: left
-}
+
 .cursor-pointer {
     cursor: pointer;
 }

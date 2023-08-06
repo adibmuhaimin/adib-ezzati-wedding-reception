@@ -7,6 +7,8 @@ $(function(){
     setTimeout(() => {
         $('body').find('.opening-card').addClass('d-none');
         $('body').find('.main-div').removeClass('d-none');
+        $('body').find('.navbar-card').removeClass('d-none');
+        AOS.refresh();  // ---  need to reinitiate after unhide
     }, 750);
    })
 })

@@ -1,6 +1,21 @@
 
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 .poppin-font{
     font-family: 'Poppins', sans-serif;
+}
+
+.tagerine-font{
+    font-family: 'Tangerine', serif;
+}
+
+.cinzel-font {
+    font-family: 'Cinzel', serif;
+}
+
+.great-vibe-font{
+    font-family: 'Great Vibes', cursive;
 }
 
 html {
@@ -10,8 +25,9 @@ body {
     margin: 0;
 }
 
-#mainContent {
+#template {
     box-shadow: inherit;
+    max-width: 600px;
 }
 
 .nav__menu_card {
@@ -27,10 +43,49 @@ body {
     font-size: 13px !important;
 }
 
+.bx-custom-icon-size {
+    font-size: 2.2rem!important;
+}
+
+.section__height {
+    height: 100vh;
+}
+
+.main-card {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text {
+    text-shadow: 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.25);
+    color: #f4d390;
+}
+
+.opening-bride-name{
+    font-size:72px;
+}
+
+.card-groom, .card-bride, .card-with {
+    font-size: 72px;
+    font-family: 'Tangerine', serif;
+    line-height: 1em;
+}
+
+
+.pb-16 {
+    padding-bottom: 4rem;
+}
+.wrapper {
+    text-align: center;
+    width: 75%;
+}
 
 
 /*=============== LOCATION ===============*/
-
 .location-icon > a{
     text-decoration: none;
     font-size: 18px;
@@ -57,7 +112,26 @@ body {
     top: -3px;
 }
 
+/*=============== CALENDAR ===============*/
+.contact-icon > a > i {
+    color: black;
+}
 
+/*=============== START ===============*/
+
+.start {
+    z-index: 99999;
+    margin: auto;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+  
+.start-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
 
 /*  //////////
     PAGE 1 
@@ -186,13 +260,6 @@ body {
 }
 
 /* Eiqal css */
-.poppin-font{
-    font-family: 'Poppins', sans-serif;
-}
-
-.great-vibe-font{
-    font-family: 'Great Vibes', cursive;
-}
 
 .subtext-font-weight {
     font-weight: 500;

@@ -122,6 +122,16 @@ body {
     margin-bottom: 10px;
 }
 
+.main-opening{
+    padding-top:28%;
+}
+
+@media only screen and (max-width: 600px) {
+   .main-opening{
+        padding-top:45%;
+   }
+  }
+
 .btn-custom, .btn-custom .active, .btn-custom:hover, .btn-custom:focus {
     background-color: #b29946 !important;
     border-color: #b29946 !important;

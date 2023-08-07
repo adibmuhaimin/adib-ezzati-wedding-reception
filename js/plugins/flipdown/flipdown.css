@@ -66,6 +66,40 @@
   border-top: solid 1px #222222;
 }
 
+
+/********** Theme: custom1 **********/
+/* Font styles */
+.flipdown.flipdown__theme-custom1 {
+  font-family: 'Alice', serif;
+  font-weight: bold;
+}
+/* Rotor group headings */
+.flipdown.flipdown__theme-custom1 .rotor-group-heading:before {
+  color: #77632a;
+}
+/* Delimeters */
+.flipdown.flipdown__theme-custom1 .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+.flipdown.flipdown__theme-custom1 .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+  background-color: #77632a;
+}
+/* Rotor tops */
+.flipdown.flipdown__theme-custom1 .rotor,
+.flipdown.flipdown__theme-custom1 .rotor-top,
+.flipdown.flipdown__theme-custom1 .rotor-leaf-front {
+  color: #FFFFFF;
+  background-color: #77632a;
+}
+/* Rotor bottoms */
+.flipdown.flipdown__theme-custom1 .rotor-bottom,
+.flipdown.flipdown__theme-custom1 .rotor-leaf-rear {
+  color: #EFEFEF;
+  background-color: #77632a;
+}
+/* Hinge */
+.flipdown.flipdown__theme-custom1 .rotor:after {
+  border-top: solid 1px #77632a;
+}
+
 /* END OF THEMES */
 
 .flipdown {

@@ -1,6 +1,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 
 .poppin-font{
     font-family: 'Poppins', sans-serif;
@@ -16,6 +18,14 @@
 
 .great-vibe-font{
     font-family: 'Great Vibes', cursive;
+}
+
+.rouge-script-font{
+    font-family: 'Rouge Script', cursive;
+}
+
+.alice-font{
+    font-family: 'Alice', serif;
 }
 
 html {
@@ -110,6 +120,19 @@ body {
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.btn-custom, .btn-custom .active, .btn-custom:hover, .btn-custom:focus {
+    background-color: #b29946 !important;
+    border-color: #b29946 !important;
+    padding-left: 45px !important;
+    padding-right:45px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.nav-icon-color, .nav-text-color {
+    color: white;
 }
   
 /*=============== LOCATION ===============*/

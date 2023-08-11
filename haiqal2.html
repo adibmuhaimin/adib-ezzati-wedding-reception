@@ -52,6 +52,10 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- SweetAlert2 -->
+        <link rel="stylesheet" href="js/plugins/sweetalert2/sweetalert2.min.css">
+        <script src="js/plugins/sweetalert2/sweetalert2.min.js"></script>
     </head>
 
     <body class="container-fluid" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
@@ -67,22 +71,22 @@
                 <div id="template" class="col-lg-4 p-0 shadow-lg">
                     <div class="start aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000">
                         <main>                                  
-                            <section class="container py-5 section__height main-card opening-card" style="background-image: url('img/marriednow-project/background-flora-custom.png')">
+                            <section class="container py-5 section__height main-card opening-card" style="background-image: url('img/marriednow-project/HL-bg.png')">
                                 <div class="start-overlay">
                                     <div class="align-items-center animated fadeInDow">
                                         <div class="container d-flex flex-column aligns-items-center justify-content-center main-opening">
                                             <div class="row"> 
                                                 <div class="col">
-                                                    <div class="rouge-script-font main_text  text-center" style="font-size:4em; color:#77632a">
+                                                    <div class="rouge-script-font main_text  text-center" style="font-size:4em; color:#b69640">
                                                         Raikan Cinta
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row"> 
                                                 <div class="alice-font main_text text-center">
-                                                <p class="animated zoomIn alice-font" style="color:#b29946; font-size:4em;">HAIQAL</p> 
-                                                <p class="animated zoomIn alice-font" style="color:#77632a; font-size:4em;">&amp;</p> 
-                                                <p class="animated zoomIn alice-font" style="color:#b29946; font-size:4em;">LINDA</p>
+                                                <p class="animated zoomIn alice-font" style="color:#b69640; font-size:4em;">HAIQAL</p> 
+                                                <p class="animated zoomIn alice-font" style="color:#8f712f; font-size:4em;">&amp;</p> 
+                                                <p class="animated zoomIn alice-font" style="color:#b69640; font-size:4em;">LINDA</p>
                                                 </div> 
                                             </div>
                                             <div class="row text-center pt-4"> 
@@ -96,7 +100,7 @@
                             </section>
                         </main>
                     </div>
-                    <nav class="d-flex navbar navbar-dark bg-dark navbar-nav w-100 bottom-fixed nav__menu_card animated fadeInUp navbar-card d-none"  style="width:inherit !important;background-color: #b29946 !important;">
+                    <nav class="d-flex navbar navbar-dark bg-dark navbar-nav w-100 bottom-fixed nav__menu_card animated fadeInUp navbar-card d-none"  style="width:inherit !important;background-color: #b69640 !important;">
                         <ul class="row m-auto p-0 w-100 text-center list-unstyled">
                             <li class="col">
                                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">
@@ -109,7 +113,7 @@
                                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#giftModal">
                                     <i class="bx bx-envelope bx-tada nav__icon bx-md nav-icon-color"></i>
                                     <br />
-                                    <small class="poppin-font nav-text-color">RVSP</small>
+                                    <small class="poppin-font nav-text-color">RSVP</small>
                                 </a>
                             </li>
                             <li class="col">
@@ -129,31 +133,31 @@
                         </ul>
                     </nav>
                     <div class="main-div d-none">
-                        <section class="container-fluid  section__height main-card" style="background-image: url('img/marriednow-project/background-flora-custom.png')">
+                        <section class="container-fluid  section__height main-card" style="background-image: url('img/marriednow-project/HL-bg.png')">
                             <div class="wrapper pb-16">
                                 <div class="align-items-center animated fadeInDow">
                                     <div class="container d-flex flex-column aligns-items-center justify-content-center">
                                         <div class="row"> 
                                             <div class="col">
-                                                <div class="rouge-script-font main_text  text-center" style="font-size:3em; color:#77632a">
+                                                <div class="rouge-script-font main_text  text-center" style="font-size:2.5em; color:#8F712F">
                                                     Raikan Cinta
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row"> 
                                             <div class="alice-font main_text text-center">
-                                            <p class="animated zoomIn alice-font" style="color:#b29946; font-size:3em;">HAIQAL</p> 
-                                            <p class="animated zoomIn alice-font" style="color:#77632a; font-size:3em;">&amp;</p> 
-                                            <p class="animated zoomIn alice-font" style="color:#b29946; font-size:3em;">LINDA</p>
+                                            <p class="animated zoomIn alice-font" style="color:#b69640; font-size:2.5em;">HAIQAL</p> 
+                                            <p class="animated zoomIn alice-font" style="color:#8f712f; font-size:2.5em;">&amp;</p> 
+                                            <p class="animated zoomIn alice-font" style="color:#b69640; font-size:2.5em;">LINDA</p>
                                             </div> 
                                         </div>
                                         <div class="row"> 
-                                            <div class="alice-font animated fadeIn main_text text-center" style="font-size:23px; color:#b29946">
+                                            <div class="alice-font animated fadeIn main_text text-center" style="font-size:18px; color:#b69640">
                                                 AHAD | 10 SEPT 2023
                                             </div>
                                         </div> 
                                         <div class="row"> 
-                                            <div class="alice-font animated fadeInUp main_text text-center" style="font-size:20px; color:#b29946">
+                                            <div class="alice-font animated fadeInUp main_text text-center" style="font-size:16px; color:#B69640">
                                                 MZ Fountain Hall, Kajang
                                         </div>
                                     </div>   
@@ -180,14 +184,14 @@
                                        ASSALAMUALAIKUM WBT &amp; SALAM SEJAHTERA
                                     </p>
                                     <div class="info-invitor aos-init aos-animate mt-3" data-aos="fade-up" data-aos-duration="1000">
-                                        <p style="font-size: 18px; color:#b29946">
+                                        <p style="font-size: 18px; color:#b69640">
                                             <b>KELUARGA PENGANTIN LELAKI</b>
                                         </p>
                                         <p class="mb-1" style="font-size:22px;">Halim Bin Haron</p>
                                         <hr class="my-1">  
                                         <p style="font-size:22px;">Ramlah Binti Mohammed</p>             
                                         <p class="pt-3 pb-3">&amp;</p>                    
-                                        <p style="font-size: 18px; color:#b29946">
+                                        <p style="font-size: 18px; color:#b69640">
                                             <b>KELUARGA PENGANTIN PEREMPUAN</b>
                                         </p>
                                         <p class="mb-1" style="font-size:22px;">Mohmad Bin Hussin</p>
@@ -203,23 +207,23 @@
                                             <p style="font-size:22px;">Mas Linda binti Mohmad</p>
                                     </div>
                                     <div class="info-details aos-init aos-animate mt-3" data-aos="fade-up" data-aos-duration="1000">
-                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color: #b29946">Tarikh</b></p>
+                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color: #b69640">Tarikh</b></p>
                                         <p style="font-size:18px;">Ahad,
                                             10
                                             September
                                             2023</p>
                                         <br>
-                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color:#b29946">Masa</b></p>
+                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color:#b69640">Masa</b></p>
                                         <p style="font-size:18px;">11:00 Pagi -
                                             4:00 Petang</p>
                                         <br>
-                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color: #b29946">Tempat</b></p>
+                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color: #b69640">Tempat</b></p>
                                         <p style="font-size:18px;">
                                             MZ Fountain Hall, Kampung Sg Ramal Luar, Kajang
                                         </p>
                                     </div>
                                     <div class="info-schedule aos-init aos-animate mt-5" data-aos="fade-up" data-aos-duration="1000">
-                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color: #b29946">Aturcara Majlis</b></p>
+                                        <p class="mt-3 mb-1" style="font-size:18px;"><b style="color: #b69640">Aturcara Majlis</b></p>
                                         <table class="table table-borderles" >
                                             <tbody class="tbody-atucara-majlis" style="font-size:18px;">
                                               <tr>
@@ -245,7 +249,7 @@
                             <img src="img/marriednow-project/divider.png" alt="" class="pl-5 pr-5 pt-5">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="wrapper w-full text-center">
-                                    <h3 class="alice-font section-title" style="color:#b29946">Menanti Hari</h3>
+                                    <h3 class="alice-font section-title" style="color:#b69640">Menanti Hari</h3>
                                     <div id="flipdown" class="flipdown flex justify-center m-auto"></div>
                                 </div>
                             </div>
@@ -276,25 +280,25 @@
                         <footer class="alice-font" style="margin-bottom:10%;">
                             <ul class="pb-20">
                                 <li class="pb-10">
-                                    <p class="hashtag text-center oleo-script-font" style="font-size: 22px; color:#77632a">#fromSCHOOLMATEStoSOULMATES</p>
+                                    <p class="hashtag text-center oleo-script-font" style="font-size: 22px; color:#8f712f">#fromschoolmatestosoulmates</p>
                                 </li>
                                 <li class="flex justify-center text-center">
                                     <p class="mx-2">
-                                        <span style="color: #b29946">
+                                        <span style="color: #b69640">
                                             <i class="fa-brands fa-codepen"></i></span> Developed by<br>
                                         Haiqal Halim
                                     </p> 
                                 </li>
                                 <li class="flex justify-center text-center mt-3">
                                     <p class="mx-2">
-                                        <span style="color: #b29946">
+                                        <span style="color: #b69640">
                                             <i class="fa-solid fa-paintbrush"></i></span> Designed by<br>
                                             <a href="https://www.linkedin.com/in/tina-hassan/" target="_blank">Tina Hassan</a>
                                     </p>
                                 </li> 
                                 <li class="flex justify-center text-center mt-3">
                                     <p class="mx-2">
-                                        <span style="color: #b29946">
+                                        <span style="color: #b69640">
                                             <i class="fa-solid fa-heart-circle-check"></i></span> Approved by<br>
                                             Linda Mohmad
                                     </p>

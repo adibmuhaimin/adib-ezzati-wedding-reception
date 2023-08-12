@@ -77,7 +77,7 @@
                                         <div class="container d-flex flex-column aligns-items-center justify-content-center main-opening">
                                             <div class="row"> 
                                                 <div class="col">
-                                                    <div class="rouge-script-font main_text  text-center" style="font-size:4em; color:#b69640">
+                                                    <div class="rouge-script-font main_text  text-center" style="font-size:4em; color:#8F712F">
                                                         Raikan Cinta
                                                     </div>
                                                 </div>
@@ -111,6 +111,13 @@
                             </li>
                             <li class="col">
                                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#giftModal">
+                                    <i class="bx bx-gift bx-flashing nav__icon bx-md nav-icon-color"></i>
+                                    <br />
+                                    <small class="poppin-font nav-text-color">Money Gift</small>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#rsvpModal">
                                     <i class="bx bx-envelope bx-tada nav__icon bx-md nav-icon-color"></i>
                                     <br />
                                     <small class="poppin-font nav-text-color">RSVP</small>
@@ -271,7 +278,7 @@
                         <!--=============== PRAYER ===============-->
                         <section class="container section prayer aos-init aos-animate mb-4" data-aos="fade-up" data-aos-duration="1000">
                             <div class="wrapper absolute mt-3" style="width: 85%">
-                                <p class="prayer-text" style="font-style:italic; font-size: 19px;">
+                                <p class="prayer-text" style="font-style:italic; font-size: 15px;">
                                     Ya Allah, berkatilah satukanlah hati kedua pasangan mempelai ini dengan iman, keyakinan dan tawakal kepadaMu, panjangkan umur mereka, lapangkanlah rezeki mereka, dekatlah mereka menuju kebaikan, jauhkanlah mereka dari keburukan, kurniakanlah mereka zuriat yang soleh dan solehah.
                                 </p>
                             </div>
@@ -337,7 +344,7 @@
                                             <li class="list-group-item calendar-icon" style="border-bottom: transparent;"> 
                                                 <a href="storage/ical/haiqal_linda_wedding.ics" targe="_blank">
                                                     <i class='bx bxl-apple bx-sm'></i>
-                                                    <span>Add to Apple Calendar</span>
+                                                    <span>Add to Phone Calendar</span>
                                                 </a>
                                             </li>
                                             <li class="list-group-item calendar-icon">
@@ -550,7 +557,7 @@
                 <!-- End Contact Modal --> 
                 
                 <!-- Contact Modal -->
-                <div class="modal fade" id="giftModal"  tabindex="-1" aria-labelledby="giftContent" aria-hidden="true">
+                <div class="modal fade" id="rsvpModal"  tabindex="-1" aria-labelledby="giftContent" aria-hidden="true">
                     <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable modal-xl">
                         <div class="modal-content poppin-font">
                             <div class="modal-header">
@@ -563,6 +570,39 @@
                     </div>
                 </div>
                 <!-- End Contact Modal -->
+
+                <!-- Gift Modal -->
+                <div class="modal fade" id="giftModal"  tabindex="-1" aria-labelledby="giftContent" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable modal-md">
+                        <div class="modal-content poppin-font">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <img src="img/qr-img.jpeg" class="rounded mx-auto d-block" alt="qrcode" style="width:50%;">
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="" value="14069020312484"  readonly>
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="copyAccount('14069020312484')">Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" readonly class="form-control-plaintext" id="bankName" value="Bank Islam Malaysia Berhad">
+                                        <input type="text" readonly class="form-control-plaintext" value="Mohamad Haiqal bin Halim">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Gift Modal -->
             </div>
         </div>
 
@@ -580,6 +620,24 @@
                 hidePreloader();
             });
             AOS.init();
+
+            function copyAccount(data) {
+                navigator.clipboard.writeText(data);
+                copy_success();
+            }
+
+            function copy_success() {
+                var Toast = Swal.mixin({
+                    toast: true,
+                    position: "center",
+                    showConfirmButton: false,
+                    timer: 3000,
+                });
+                Toast.fire({
+                    icon: "success",
+                    title: "Copied to clipboard",
+                });
+            }
           </script>
         <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
         <script src="js/calendar.js"></script>

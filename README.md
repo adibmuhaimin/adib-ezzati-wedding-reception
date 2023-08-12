@@ -25,5 +25,5 @@ Various libraries and plugins have been utilized to develop this project. Here i
 3. [Boxicons](https://boxicons.com/)
 
 ## API and Others
-1. [Youtube Ifram API](https://developers.google.com/youtube/iframe_api_reference)
+1. [Youtube Iframe API](https://developers.google.com/youtube/iframe_api_reference)
 2. [RSVP](https://www.jotform.com/)

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Walimatulurus Adib & Ezzati
+X-WR-TIMEZONE:Asia/Kuala_Lumpur
+BEGIN:VEVENT
+DTSTART:20231210T030000Z
+DTEND:20231210T080000Z
+DTSTAMP:20231105T123926Z
+UID:4a627ln34a8l56lgej08spcibg@google.com
+CREATED:20231105T122524Z
+DESCRIPTION:Majlis resepsi perkahwinan\nAdib Muhaimin bin Abdullah & Nur Ez
+ zati binti Ibrahim\n\n\nTempat: The Gabion Garden Hall\nTarikh: 10 Disember
+  2023\, Ahad\nMasa: 11 pagi - 4 petang
+LAST-MODIFIED:20231105T122549Z
+LOCATION:The Gabion Garden Hall\, 25\, Jalan 3/23a Pt.2\, The Ark\, Galeri 
+ PV\, 17\, Jalan 3/23a\, Taman Danau Kota\, 53300 Kuala Lumpur\, Wilayah Per
+ sekutuan Kuala Lumpur\, Malaysia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Walimatulurus Adib & Ezzati
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT1H0M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
